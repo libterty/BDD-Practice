@@ -1,0 +1,20 @@
+{
+    "name": "bdd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev-test": "cucumber-js src/test/features",
+        "test-report-html": "cucumber-js src/test/features -f json:reports/test-report.json; node generate-test-report-html.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cucumber": "^5.1.0",
+        "expect": "^24.9.0"
+    },
+    "devDependencies": {
+        "cucumber-html-reporter": "^5.0.2"
+    }
+}

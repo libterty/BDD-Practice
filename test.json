@@ -1,0 +1,19 @@
+{
+    "results": [{
+            "_id": {
+                "$id": "5d7732fb11207c1fe8bc4a95"
+            },
+            "email": "test1@gmail.com",
+            "password": "12345678",
+            "username": ""
+        },
+        {
+            "_id": {
+                "$id": "5d7732fb11207c1fe8bc4a96"
+            },
+            "email": "test2@gmail.com",
+            "password": "12345678",
+            "username": ""
+        }
+    ]
+}

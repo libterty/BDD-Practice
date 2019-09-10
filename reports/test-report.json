@@ -1,0 +1,147 @@
+[
+  {
+    "description": "  Test the feature of getting report by seniority.",
+    "keyword": "Feature",
+    "name": "Get Employee Report by Seniority",
+    "line": 1,
+    "id": "get-employee-report-by-seniority",
+    "tags": [],
+    "uri": "src/test/features/emp-report.feature",
+    "elements": [
+      {
+        "id": "get-employee-report-by-seniority;get-employees-with-seniority-over-10-years",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Get employees with seniority over 10 years",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "today is: year 2019, month 1, day 1",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I get employee report by seniority over 10 years",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:7"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the report should have length 2",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the entry 1 of report should match: name is \"Max\", onboardDate is \"2008-05-04\"",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the entry 2 of report should match: name is \"Mike\", onboardDate is \"2005-01-01\"",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "get-employee-report-by-seniority;get-employees-with-seniority-less-than-5-years",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Get employees with seniority less than 5 years",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "today is: year 2019, month 1, day 1",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I get employee report by seniority less than 5 years",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:10"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the report should have length 1",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the entry 1 of report should match: name is \"Sepp\", onboardDate is \"2018-12-17\"",
+            "match": {
+              "location": "src/test/features/emp-report-stepdefs.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
